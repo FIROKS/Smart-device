@@ -1,0 +1,137 @@
+.footer {
+  position: relative;
+  min-height: 316px;
+  padding-top: 60px;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: #1B2D37;
+  background-color: #ffffff;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__title {
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: normal;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1B2D37;
+}
+
+.footer__social-row {
+  margin-right: auto;
+  padding-right: 20px;
+}
+
+.footer__social {
+  @include list-reset;
+  display: flex;
+  margin-top: 53px;
+}
+
+.footer__social li {
+  margin-right: 15px;
+}
+
+.footer__social-link {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.footer__social-link--fb {
+  background-image: url(../../img/icon-facebook.svg);
+}
+
+.footer__social-link--o {
+  background-image: url(../../img/icon-class.svg);
+}
+
+.footer__social-link--vk {
+  background-image: url(../../img/icon-vk.svg);
+}
+
+.footer__nav {
+  max-width: 555px;
+}
+
+.footer__nav-list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100px;
+}
+
+.footer__nav-list li {
+  width: 245px;
+}
+
+.footer__nav-list li:nth-child(2n+1) {
+  margin-right: 65px;
+}
+
+.footer__nav-list a{
+  color: #1B2D37;
+  opacity: 0.5;
+}
+
+.footer__adress-row {
+  margin-left: auto;
+}
+
+.footer__adress-row p {
+  margin: 0;
+  padding: 0;
+  color: #1B2D37;
+  opacity: 0.5;
+}
+
+.footer__tel-list {
+  @include list-reset;
+}
+
+.footer__tel-list a {
+  color: #1B2D37;
+  opacity: 0.5;
+}
+
+.footer__bottom {
+  margin-top: 55px;
+  padding: 14px 0;
+  border-top: 1px solid rgba(#626962, .2);
+}
+
+.footer__bottom p {
+  margin: 0;
+  margin-right: 60px;
+  padding: 0;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1B2D37;
+  opacity: 0.5;
+}
+
+.footer__bottom .footer__sd {
+  margin-right: 140px;
+}
+
+.footer__bottom p:last-child {
+  margin-left: auto;
+  margin-right: 0;
+}
