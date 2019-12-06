@@ -1,4 +1,4 @@
-@media (min-width: $desktop-width) {
+
   .button {
     padding: 14px 15px;
     font-family: 'Roboto Condensed', 'Arial', sans-serif;
@@ -20,8 +20,17 @@
     margin-left: 98px;
     margin-bottom: 160px;
     padding: 18px 17px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 19px;
     border: none;
+  }
+
+@media (max-width: $desktop-width) {
+  .button--header {
+    display: none;
+  }
+
+  .button--start {
+    margin-left: 47px;
   }
 }

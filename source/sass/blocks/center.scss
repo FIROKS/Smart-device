@@ -1,7 +1,20 @@
-@media (min-width: $desktop-width) {
+
   .center {
     max-width: 1500px;
     margin: 0 auto;
+    padding: 0 20px;
   }
 
+
+@media (max-width: $desktop-width) {
+  .center {
+    max-width: 770px;
+    padding: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .center {
+    min-width: 320px;
+  }
 }

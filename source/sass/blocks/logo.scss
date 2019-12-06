@@ -1,4 +1,3 @@
-@media (min-width: $desktop-width){
 
   .logo {
     display: flex;
@@ -29,4 +28,18 @@
     color: #788891;
   }
 
+@media (max-width: $tablet-width) {
+  .logo {
+    width: auto;
+  }
+
+  .logo img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .logo__bold-text,
+  .logo__text {
+    font-size: 0;
+  }
 }
