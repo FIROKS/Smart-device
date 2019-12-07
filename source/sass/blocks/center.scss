@@ -2,10 +2,9 @@
   .center {
     max-width: 1500px;
     margin: 0 auto;
-    padding: 0 10px;
   }
 
-  .center--footer {
+  .center--footer-bot {
     display: flex;
   }
 
@@ -13,6 +12,16 @@
 @media (max-width: $desktop-width) {
   .center {
     max-width: 770px;
+  }
+
+  .center--footer {
+    max-width: none;
+    width: 100%;
+  }
+
+  .center--footer-bot {
+    display: flex;
+    max-width: none;
   }
 }
 

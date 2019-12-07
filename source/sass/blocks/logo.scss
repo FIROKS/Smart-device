@@ -32,7 +32,7 @@
     color: #203C42;
   }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width - 1) {
   .logo {
     width: auto;
   }
