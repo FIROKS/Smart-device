@@ -46,4 +46,20 @@
   .logo__text {
     font-size: 0;
   }
+
+  .logo--footer img {
+    width: 52px;
+    height: 52px;
+    margin-right: 15px;
+  }
+
+  .logo--footer .logo__bold-text {
+    font-size: 25px;
+    line-height: 29px;
+  }
+
+  .logo--footer .logo__text {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
