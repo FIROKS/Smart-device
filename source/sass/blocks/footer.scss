@@ -29,7 +29,6 @@
 }
 
 .footer__social-row {
-  margin-right: auto;
   padding-right: 20px;
 }
 
@@ -64,23 +63,22 @@
   background-image: url(../../img/icon-vk.svg);
 }
 
+.footer__nav-container {
+  display: flex;
+  width: 1070px;
+  margin-left: auto;
+}
+
 .footer__nav {
   max-width: 555px;
 }
 
 .footer__nav-list {
   @include list-reset;
-  display: flex;
-  flex-wrap: wrap;
   min-height: 100px;
-}
-
-.footer__nav-list li {
-  width: 245px;
-}
-
-.footer__nav-list li:nth-child(2n+1) {
-  margin-right: 65px;
+  max-width: 520px;
+  column-count: 2;
+  column-width: 245px;
 }
 
 .footer__nav-list a{
@@ -89,6 +87,7 @@
 }
 
 .footer__adress-row {
+  width: 415px;
   margin-left: auto;
 }
 
@@ -133,7 +132,7 @@
 
 .footer__bottom p:last-child {
   margin-left: auto;
-  margin-right: 0;
+  margin-right: 65px;
 }
 
 @media (max-width: $desktop-width) {
