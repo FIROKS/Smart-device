@@ -1,0 +1,36 @@
+
+  .button {
+    padding: 14px 15px;
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: transparent;
+  }
+
+  .button--start {
+    background-color: $main-color;
+    margin-left: 98px;
+    margin-bottom: 160px;
+    padding: 18px 17px;
+    font-size: 14px;
+    line-height: 19px;
+    border: none;
+  }
+
+@media (max-width: $desktop-width) {
+  .button--header {
+    display: none;
+  }
+
+  .button--start {
+    margin-left: 47px;
+  }
+}
