@@ -168,7 +168,8 @@
   }
 
   .footer__nav-list {
-    flex-direction: column;
+    column-count: 1;
+    column-width: auto;
   }
 
   .footer__nav-list li:nth-child(2n+1) {
