@@ -1,0 +1,42 @@
+.about {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.about__year {
+  height: 317px;
+  width: 155px;
+  background-image: url(../../img/year-desktop@1x.png);
+  background-repeat: no-repeat;
+  background-position: 30%;
+  // background-size: 220px 317px;
+  background-size: cover;
+}
+
+.about__container {
+  max-width: 985px;
+  margin-left: 20px;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 0;
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about__text {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+@media (min-resolution: $retina-dpi),
+(min-resolution: $retina-dppx) {
+    .about__year {
+      background-image: url(../../img/year-desktop@2x.png);
+  }
+}
