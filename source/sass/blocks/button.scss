@@ -40,4 +40,14 @@
   .button--start {
     margin-left: 47px;
   }
+
+  .button--about {
+    min-width: 180px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .button--about {
+    margin-top: 0;
+  }
 }

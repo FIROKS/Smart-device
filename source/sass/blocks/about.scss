@@ -10,7 +10,6 @@
   background-image: url(../../img/year-desktop@1x.png);
   background-repeat: no-repeat;
   background-position: 30%;
-  // background-size: 220px 317px;
   background-size: cover;
 }
 
@@ -24,6 +23,7 @@
   margin-bottom: 18px;
   padding: 0;
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-weight: normal;
   font-size: 36px;
   line-height: 51px;
 }
@@ -36,7 +36,64 @@
 
 @media (min-resolution: $retina-dpi),
 (min-resolution: $retina-dppx) {
-    .about__year {
-      background-image: url(../../img/year-desktop@2x.png);
+  .about__year {
+    background-image: url(../../img/year-desktop@2x.png);
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .about {
+    max-width: 720px;
+    margin-bottom: 75px;
+  }
+
+  .about__year {
+    height: 360px;
+    width: 140px;
+  }
+
+  .about__container {
+    max-width: 530px;
+    margin-left: 50px;
+  }
+
+  .about__title {
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .about__more {
+    font-size: 0;
+  }
+
+  .about__more::after {
+    content: '..';
+    font-size: 16px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about {
+    min-width: 320px;
+    margin-bottom: 65px;
+  }
+
+  .about__year {
+    display: none;
+  }
+
+  .about__container {
+    margin-left: 14px;
+    margin-right: 5px;
+  }
+
+  .about__title {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .about__text {
+    margin-bottom: 38px;
   }
 }
