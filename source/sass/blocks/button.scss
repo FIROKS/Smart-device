@@ -36,6 +36,13 @@
     cursor: pointer;
   }
 
+  .button--about:hover {
+    min-width: 155px;
+    margin-top: 15px;
+    background-color: $main-color;
+    color: #ffffff;
+  }
+
 @media (max-width: $desktop-width) {
   .button--header {
     display: none;

@@ -124,6 +124,12 @@
   background-color: transparent;
 }
 
+.form-section__form button:hover {
+  background-color: #ffffff;
+  color: $main-color;
+  cursor: pointer;
+}
+
 .form-section__form input[id="agreement"] + label {
   display: inline-block;
   position: relative;
@@ -135,6 +141,11 @@
   font-style: normal;
   font-weight: normal;
   color: rgba(#ffffff, .8);
+}
+
+.form-section__form input[id="agreement"] + label:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .form-section__form input[id="agreement"] {
