@@ -52,6 +52,14 @@
   margin-bottom: 23px;
 }
 
+.advantages__icon use {
+  fill: $main-color;
+}
+
+.advantages__list li:hover use {
+  fill: #ffffff;
+}
+
 .advantages__title {
   margin: 0;
   margin-bottom: 15px;
