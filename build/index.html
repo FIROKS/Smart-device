@@ -239,6 +239,26 @@
           </div>
       </footer>
     </div>
+    <section class="modal modal--call">
+      <h2 class="modal__title">Закажите звонок</h2>
+      <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <div class="modal__form">
+        <form action="#" method="POST">
+          <label>
+            <input type="text" name="name" placeholder="Имя" required="">
+          </label>
+          <label>
+            <input type="tel" name="tel" placeholder="Телефон" required="">
+          </label>
+          <textarea name="question" placeholder="Ваш вопрос" required=""></textarea>
+          <button type="submit">Отправить</button>
+          <input id="modal-agreement" type="checkbox" name="agreement" required="">
+          <label for="modal-agreement"> Я согласен на обработку персональных данных</label>
+        </form>
+      </div>
+      <button type="button" class="modal__close"></button>
+    </section>
+    <div class="modal modal--bl"></div>
   </body>
 </div>
 </html>
