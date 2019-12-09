@@ -1,4 +1,5 @@
 .modal--call {
+  display: none;
   position: fixed;
   top: 136px;
   left: 50%;
@@ -10,6 +11,7 @@
 }
 
 .modal--bl {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -18,6 +20,10 @@
   height: 100vh;
   background-color: rgba(#000000, 0.5);
   z-index: 5;
+}
+
+.modal--show {
+  display: block;
 }
 
 .modal__title {
