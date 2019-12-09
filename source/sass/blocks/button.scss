@@ -25,6 +25,13 @@
     border: none;
   }
 
+  .button--about {
+    min-width: 155px;
+    margin-top: 15px;
+    color: $main-color;
+    border-color: $main-color;
+  }
+
 @media (max-width: $desktop-width) {
   .button--header {
     display: none;
@@ -32,5 +39,15 @@
 
   .button--start {
     margin-left: 47px;
+  }
+
+  .button--about {
+    min-width: 180px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .button--about {
+    margin-top: 0;
   }
 }

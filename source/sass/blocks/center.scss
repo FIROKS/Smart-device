@@ -8,6 +8,10 @@
     display: flex;
   }
 
+  .center--form {
+    display: flex;
+    align-items: center;
+  }
 
 @media (max-width: $desktop-width) {
   .center {
