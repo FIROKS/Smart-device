@@ -6,9 +6,9 @@
 
 .body__start-container {
   min-height: 878px;
-  background-image: url(../../img/circuit-desktop@1x.png), url(../../img/triangles.svg), url(../../img/waves.svg);
-  background-position: 82% 245px, 95px 35px, center;
-  background-size: 705px 515px, 1514px 750px, cover;
+  background-image: url(../../img/waves.svg);
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color:#1B2D37;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -16,9 +16,18 @@
 
 @media (max-width: $desktop-width){
   .body__start-container {
-  min-height: 685px;
-  background-position: 665px 110px, -290px -150px, center;
-  background-size: 465px 340px, 1514px 750px, cover;
+    min-height: 685px;
+    background-position: center;
+    background-size: cover;
   }
+}
+
+@media (max-width: $tablet-width) {
+  .body__start-container {
+    min-height: 646px;
+    padding-left: 14px;
+    background-image: url(../../img/waves.svg), url(../../img/promo-triangles-mobile.svg);
+    background-position: center,-70px -15px;
+    }
 }
 

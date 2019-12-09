@@ -1,7 +1,7 @@
 .start {
-  display: flex;
+  position: relative;
   padding-top: 173px;
-  }
+}
 
 .start__container {
   display: flex;
@@ -9,6 +9,19 @@
   align-items: flex-start;
   position: relative;
   max-width: 750px;
+  z-index: 1;
+}
+
+.start__image {
+  position: absolute;
+  top: 173px;
+  right: 0;
+  width: 705px;
+  height: 515px;
+  background-image: url(../../img/bg-promo-desktop@1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 
 .start__title {
@@ -62,9 +75,13 @@
   transform: rotate(-90deg);
 }
 
+.start__button-text-m {
+  display: none;
+}
+
 @media (max-width: $desktop-width) {
   .start {
-    padding-top: 0;
+    padding-top: 116px;
     background-position: 170% 15%;
     background-repeat: no-repeat;
     background-size: 465px 340px;
@@ -72,11 +89,19 @@
 
   .start__container {
     position: relative;
-    width: 493px;
+    max-width: 493px;
     padding-left: 63px;
   }
 
+  .start__image {
+    top: -60px;
+    right: -180px;
+    width: 420px;
+    height: 385px;
+  }
+
   .start__title {
+    margin-top: 0;
     font-size: 60px;
     line-height: 70px;
   }
@@ -97,3 +122,41 @@
   }
 }
 
+@media (max-width: $tablet-width) {
+  .start {
+    padding-top: 215px;
+  }
+
+  .start__container {
+    padding-left: 15px;
+  }
+
+  .start__title {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .start__subtitle {
+    margin-bottom: 42px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .start__image {
+    top: 20px;
+    left: 15px;
+    width: 301px;
+    height: 220px;
+    background-image: url(../../img/circuit-mobile@1x.png);
+    background-size: contain;
+  }
+
+  .start__button-text{
+    display: none;
+  }
+
+  .start__button-text-m {
+    display: inline;
+  }
+
+}
