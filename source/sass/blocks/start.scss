@@ -9,6 +9,7 @@
   align-items: flex-start;
   position: relative;
   max-width: 750px;
+  padding-bottom: 186px;
   z-index: 1;
 }
 
@@ -79,6 +80,13 @@
   display: none;
 }
 
+@media (min-resolution: $retina-dpi),
+(min-resolution: $retina-dppx) {
+  .start__image {
+    background-image: url(../../img/bg-promo-desktop@2x.png);
+  }
+}
+
 @media (max-width: $desktop-width) {
   .start {
     padding-top: 116px;
@@ -91,6 +99,11 @@
     position: relative;
     max-width: 493px;
     padding-left: 63px;
+    padding-bottom: 0;
+  }
+
+  .start__scroll-text {
+    display: none;
   }
 
   .start__image {
