@@ -1,27 +1,26 @@
+.center {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-left: 44px;
+}
 
-  .center {
-    max-width: 1500px;
-    margin: 0 auto;
-    padding-left: 44px;
-  }
+.center--footer {
+  padding-left: 21px;
+}
 
-  .center--footer {
-    padding-left: 21px;
-  }
+.center--footer-bot {
+  display: flex;
+  padding-right: 46px;
+}
 
-  .center--footer-bot {
-    display: flex;
-    padding-right: 46px;
-  }
+.center--form {
+  display: flex;
+  align-items: center;
+}
 
-  .center--form {
-    display: flex;
-    align-items: center;
-  }
-
-  .center--no-pad {
-    padding: 0;
-  }
+.center--no-pad {
+  padding: 0;
+}
 
 @media (max-width: $desktop-width) {
   .center {

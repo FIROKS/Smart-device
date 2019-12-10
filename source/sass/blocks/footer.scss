@@ -4,7 +4,7 @@
   padding-top: 60px;
   font-size: 15px;
   line-height: 25px;
-  color: #1B2D37;
+  color: #1b2d37;
   background-color: #ffffff;
 }
 
@@ -18,7 +18,7 @@
   margin-top: 5px;
   margin-bottom: 25px;
   padding: 0;
-  font-family: 'RobotoCondensed-Regular', 'Arial', sans-serif;
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-size: 15px;
   line-height: 16px;
   font-style: normal;
@@ -55,19 +55,19 @@
 
 .footer__social-link:hover {
   cursor: pointer;
-  box-shadow: 0 0 0 1px #00B2FF inset;
+  box-shadow: 0 0 0 1px $main-color inset;
 }
 
 .footer__social-link--fb {
-  background-image: url(../../img/icon-facebook.svg);
+  background-image: url("../../img/icon-facebook.svg");
 }
 
 .footer__social-link--o {
-  background-image: url(../../img/icon-class.svg);
+  background-image: url("../../img/icon-class.svg");
 }
 
 .footer__social-link--vk {
-  background-image: url(../../img/icon-vk.svg);
+  background-image: url("../../img/icon-vk.svg");
 }
 
 .footer__nav-container {
@@ -92,12 +92,12 @@
   margin-right: 0;
 }
 
-.footer__nav-list a{
-  color: #1B2D37;
+.footer__nav-list a {
+  color: #1b2d37;
   opacity: 0.5;
 }
 
-.footer__nav-list a:hover{
+.footer__nav-list a:hover {
   opacity: 1;
 }
 
@@ -109,7 +109,7 @@
 .footer__adress-row p {
   margin: 0;
   padding: 0;
-  color: #1B2D37;
+  color: #1b2d37;
   opacity: 0.5;
 }
 
@@ -118,7 +118,7 @@
 }
 
 .footer__tel-list a {
-  color: #1B2D37;
+  color: #1b2d37;
   opacity: 0.5;
 }
 
@@ -130,7 +130,7 @@
 .footer__bottom {
   margin-top: 59px;
   padding: 14px 0;
-  border-top: 1px solid rgba(#626962, .2);
+  border-top: 1px solid rgba(#626962, 0.2);
 }
 
 .footer__bottom p,
@@ -143,7 +143,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #1B2D37;
+  color: #1b2d37;
   opacity: 0.5;
 }
 
@@ -162,7 +162,7 @@
 }
 
 @media (max-width: $desktop-width) {
-	.footer {
+  .footer {
     min-height: 456px;
     padding-top: 0;
   }
@@ -171,14 +171,14 @@
     flex-direction: column;
   }
 
-	.footer__social-row {
+  .footer__social-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-right: 0;
     margin-left: 0;
     padding: 20px 22px 25px 24px;
-		border-bottom: 1px solid rgba(#626962, .2);
+    border-bottom: 1px solid rgba(#626962, 0.2);
   }
 
   .footer__social {
@@ -263,7 +263,7 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    border-bottom: 1px solid rgba(#626962, .2);
+    border-bottom: 1px solid rgba(#626962, 0.2);
   }
 
   .footer__nav-list {
@@ -284,7 +284,7 @@
     padding-top: 2px;
   }
 
-  .footer__tel-list li{
+  .footer__tel-list li {
     padding-left: 15px;
   }
 

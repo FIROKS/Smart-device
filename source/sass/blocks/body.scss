@@ -6,15 +6,15 @@
 
 .body__start-container {
   min-height: 878px;
-  background-image: url(../../img/waves.svg);
+  background-image: url("../../img/waves.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color:#1B2D37;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #1b2d37;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media (max-width: $desktop-width){
+@media (max-width: $desktop-width) {
   .body__start-container {
     min-height: 685px;
     background-position: center;
@@ -27,8 +27,8 @@
   .body__start-container {
     min-height: 646px;
     padding-left: 0;
-    background-image: url(../../img/waves.svg), url(../../img/promo-triangles-mobile.svg);
+    background-image: url("../../img/waves.svg"),
+      url("../../img/promo-triangles-mobile.svg");
     background-position: center, 88px -84px;
-    }
+  }
 }
-

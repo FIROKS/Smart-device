@@ -19,7 +19,7 @@
   right: -26px;
   width: 705px;
   height: 515px;
-  background-image: url(../../img/bg-promo-desktop@1x.png);
+  background-image: url("../../img/bg-promo-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -30,14 +30,14 @@
   margin-top: 58px;
   margin-bottom: 30px;
   padding: 0;
-  font-family: 'RobotoCondensed-Bold', 'Arial', sans-serif;
+  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-size: 80px;
   line-height: 94px;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .start__subtitle {
@@ -80,9 +80,9 @@
 }
 
 @media (min-resolution: $retina-dpi),
-(min-resolution: $retina-dppx) {
+  (min-resolution: $retina-dppx) {
   .start__image {
-    background-image: url(../../img/bg-promo-desktop@2x.png);
+    background-image: url("../../img/bg-promo-desktop@2x.png");
   }
 }
 
@@ -99,10 +99,6 @@
     max-width: 493px;
     padding-left: 88px;
     padding-bottom: 0;
-  }
-
-  .start__scroll-text {
-    display: none;
   }
 
   .start__image {
@@ -164,16 +160,15 @@
     width: 301px;
     height: 220px;
     margin-left: -110px;
-    background-image: url(../../img/circuit-mobile@1x.png);
+    background-image: url("../../img/circuit-mobile@1x.png");
     background-size: contain;
   }
 
-  .start__button-text{
+  .start__button-text {
     display: none;
   }
 
   .start__button-text-m {
     display: inline;
   }
-
 }

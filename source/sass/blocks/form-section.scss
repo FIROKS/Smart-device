@@ -2,7 +2,7 @@
   min-height: 667px;
   padding-top: 92px;
   padding-bottom: 112px;
-  background-image: url(../../img/form-bg.svg);
+  background-image: url("../../img/form-bg.svg");
   background-repeat: no-repeat;
   background-position: 100% -58px;
   background-color: $main-color;
@@ -13,7 +13,7 @@
   height: 336px;
   margin-right: 115px;
   margin-left: 92px;
-  background-image: url(../../img/airplane@1x.png);
+  background-image: url("../../img/airplane@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -27,7 +27,7 @@
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
-  font-family: 'RobotoCondensed-Regular', 'Arial', sans-serif;
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-size: 36px;
   line-height: 51px;
   font-style: normal;
@@ -95,25 +95,28 @@
 
 .form-section__form input::-webkit-input-placeholder,
 .form-section__form textarea::-webkit-input-placeholder {
-  color:#ffffff;
+  color: #ffffff;
 }
+
 .form-section__form input::-moz-placeholder,
 .form-section__form textarea::-moz-placeholder {
-  color:#ffffff;
+  color: #ffffff;
 }
+
 .form-section__form input:-moz-placeholder,
 .form-section__form textarea:-moz-placeholder {
-  color:#ffffff;
+  color: #ffffff;
 }
+
 .form-section__form input:-ms-input-placeholder,
 .form-section__form textarea:-ms-input-placeholder {
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .form-section__form button {
   width: 270px;
   padding: 14px 15px;
-  font-family: 'RobotoCondensed-Bold', 'Arial', sans-serif;
+  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-style: normal;
@@ -143,7 +146,7 @@
   font-family: inherit;
   font-style: normal;
   font-weight: normal;
-  color: rgba(#ffffff, .8);
+  color: rgba(#ffffff, 0.8);
 }
 
 .form-section__form input[id="agreement"] + label:hover {
@@ -166,7 +169,7 @@
 }
 
 .form-section__form input[id="agreement"]:checked + label::before {
-  background-image: url(../../img/tick.svg);
+  background-image: url("../../img/tick.svg");
   background-size: 10px 7px;
   background-repeat: no-repeat;
   background-position: center;
@@ -206,7 +209,7 @@
   }
 
   .form-section__form input[type="text"],
-  .form-section__form input[type="tel"]  {
+  .form-section__form input[type="tel"] {
     width: 280px;
     padding-top: 11px;
     padding-bottom: 18px;
@@ -257,7 +260,7 @@
     padding-left: 0;
   }
 
-  .form-section__form label{
+  .form-section__form label {
     width: 100%;
   }
 
