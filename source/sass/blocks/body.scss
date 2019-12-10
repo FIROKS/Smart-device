@@ -19,15 +19,16 @@
     min-height: 685px;
     background-position: center;
     background-size: cover;
+    box-shadow: none;
   }
 }
 
 @media (max-width: $tablet-width) {
   .body__start-container {
     min-height: 646px;
-    padding-left: 14px;
+    padding-left: 0;
     background-image: url(../../img/waves.svg), url(../../img/promo-triangles-mobile.svg);
-    background-position: center,-70px -15px;
+    background-position: center, 88px -84px;
     }
 }
 

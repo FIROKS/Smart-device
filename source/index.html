@@ -8,8 +8,9 @@
   <title>Smart device</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<div class="container">
+
   <body class="body">
+    <div class="container">
     <div style="display: none">
       <include src="build/img/sprite_auto.svg"></include>
     </div>
@@ -46,37 +47,41 @@
       <main class="main">
         <div class="main__container">
           <section class="advantages">
-          <div class="center">
+          <div class="center center--no-pad">
             <h2 class="visually-hidden">Наши преимущества</h2>
             <ul class="advantages__list">
               <li>
-                <svg class="advantages__icon" width="29"
+                <div class="advantages__icon-container"> <svg class="advantages__icon" width="29"
                 height="35"><use xlink:href="#icon-watch"></use></svg>
+                </div>
                 <h3 class="advantages__title">Оперативные сроки</h3>
                 <p class="advantages__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
               </li>
               <li>
-                <svg class="advantages__icon" width="35"
-                height="35"><use xlink:href="#icon-hired"></use></svg>
+                <div class="advantages__icon-container"> <svg class="advantages__icon" width="32"
+                height="32"><use xlink:href="#icon-hired"></use></svg>
+                </div>
                 <h3 class="advantages__title">Крупные поставщики</h3>
                 <p class="advantages__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
               </li>
               <li>
-                <svg class="advantages__icon" width="36"
-                height="31"><use xlink:href="#icon-privacy"></use></svg>
+                <div class="advantages__icon-container"> <svg class="advantages__icon" width="30"
+                height="26"><use xlink:href="#icon-privacy"></use></svg>
+                </div>
                 <h3 class="advantages__title">Полная конфиденциальность</h3>
                 <p class="advantages__text">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
               </li>
               <li>
-                <svg class="advantages__icon" width="35"
-                height="35"><use xlink:href="#icon-tag"></use></svg>
+                <div class="advantages__icon-container"> <svg class="advantages__icon" width="32"
+                height="32"><use xlink:href="#icon-tag"></use></svg>
+                </div>
                 <h3 class="advantages__title">Персонализация стоимости</h3>
                 <p class="advantages__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
               </li>
             </ul>
           </div>
           </section>
-          <div class="center">
+          <div class="center center--no-pad">
           <section class="about">
               <div class="about__year"></div>
               <div class="about__container">
@@ -89,7 +94,7 @@
           </div>
         </div>
         <section class="goods">
-          <div class="center">
+          <div class="center center--no-pad">
             <div class="goods__container">
             <h2 class="visually-hidden">Товары и услуги</h2>
             <p class="goods__lead">Service Device предлагает следующие товары и услуги</p>
@@ -148,7 +153,7 @@
               <a class="logo logo--footer">
                 <img src="img/logo.svg" width="52" height="52" alt="Лого фирмы Smart Device">
                 <div class="logo__container">
-                  <p class="logo__bold-text">Smart Device</p>
+                  <p class="logo__bold-text">Service Device</p>
                   <p class="logo__text">умные технологии</p>
                 </div>
               </a>
@@ -178,6 +183,8 @@
                   <li><a href="#">Продукты</a></li>
                   <li><a href="#">Производство печатных плат</a></li>
                   <li><a href="#">Монтаж печатных плат</a></li>
+                </ul>
+                <ul class="footer__nav-list">
                   <li><a href="#">Комплектующие</a></li>
                   <li><a href="#">Доставка</a></li>
                   <li><a href="#">Контакты</a></li>
@@ -226,6 +233,6 @@
     </section>
     <div class="modal modal--overlay"></div>
     <script src="js/main.js"></script>
+  </div>
   </body>
-</div>
 </html>

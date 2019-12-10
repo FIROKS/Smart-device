@@ -1,7 +1,8 @@
 
   .button {
+    min-width: 180px;
     padding: 14px 15px;
-    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-family: 'RobotoCondensed-Bold', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 16px;
     font-style: normal;
@@ -17,16 +18,15 @@
 
   .button--start {
     background-color: $main-color;
-    margin-left: 98px;
-    padding: 18px 17px;
-    font-size: 14px;
+    margin-left: 93px;
+    padding: 18px 45px;
+    font-size: 16px;
     line-height: 19px;
     border: none;
   }
 
   .button--about {
-    min-width: 155px;
-    margin-top: 15px;
+    margin-top: 19px;
     color: $main-color;
     border-color: $main-color;
   }
@@ -49,18 +49,22 @@
   }
 
   .button--start {
-    margin-left: 47px;
+    min-width: 380px;
+    margin-left: 51px;
+    padding: 18px 30px;
   }
 
   .button--about {
     min-width: 180px;
+    margin-top: 16px;
+    margin-left: 3px;
   }
 }
 
 @media (max-width: $tablet-width) {
   .button--start {
-    width: 265px;
-    margin-left: 0;
+    min-width: 287px;
+    margin-left: 3px;
     font-size: 16px;
     line-height: 19px;
   }

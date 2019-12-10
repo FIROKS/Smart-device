@@ -9,14 +9,14 @@
   align-items: flex-start;
   position: relative;
   max-width: 750px;
-  padding-bottom: 186px;
+  padding-bottom: 182px;
   z-index: 1;
 }
 
 .start__image {
   position: absolute;
   top: 173px;
-  right: 0;
+  right: -26px;
   width: 705px;
   height: 515px;
   background-image: url(../../img/bg-promo-desktop@1x.png);
@@ -30,8 +30,8 @@
   margin-top: 58px;
   margin-bottom: 30px;
   padding: 0;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
-  font-size: 70px;
+  font-family: 'RobotoCondensed-Bold', 'Arial', sans-serif;
+  font-size: 80px;
   line-height: 94px;
   font-style: normal;
   font-weight: bold;
@@ -43,12 +43,11 @@
 .start__subtitle {
   position: relative;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 43px;
   padding: 0;
-  padding-left: 98px;
+  padding-left: 93px;
   font-size: 22px;
   line-height: 34px;
-  letter-spacing: 0.12em;
   color: #ffffff;
 }
 
@@ -65,7 +64,7 @@
 .start__scroll-text {
   position: absolute;
   bottom: 35px;
-  left: -35px;
+  left: -39px;
   max-width: 150px;
   margin: 0;
   padding: 0;
@@ -89,7 +88,7 @@
 
 @media (max-width: $desktop-width) {
   .start {
-    padding-top: 116px;
+    padding-top: 105px;
     background-position: 170% 15%;
     background-repeat: no-repeat;
     background-size: 465px 340px;
@@ -98,7 +97,7 @@
   .start__container {
     position: relative;
     max-width: 493px;
-    padding-left: 63px;
+    padding-left: 88px;
     padding-bottom: 0;
   }
 
@@ -107,9 +106,9 @@
   }
 
   .start__image {
-    top: -60px;
-    right: -180px;
-    width: 420px;
+    top: -15px;
+    right: -208px;
+    width: 470px;
     height: 385px;
   }
 
@@ -121,13 +120,14 @@
 
   .start__subtitle {
     width: auto;
-    padding-left: 47px;
+    padding-left: 51px;
+    margin-bottom: 54px;
     font-size: 18px;
     line-height: 28px;
   }
 
   .start__subtitle::after {
-    width: 33px;
+    width: 35px;
   }
 
   .start__scroll-text {
@@ -137,29 +137,33 @@
 
 @media (max-width: $tablet-width) {
   .start {
-    padding-top: 215px;
+    padding-top: 219px;
   }
 
   .start__container {
+    margin: 0 auto;
     padding-left: 15px;
   }
 
   .start__title {
+    margin-bottom: 26px;
     font-size: 40px;
     line-height: 47px;
   }
 
   .start__subtitle {
-    margin-bottom: 42px;
+    margin-bottom: 39px;
+    padding-left: 52px;
     font-size: 16px;
     line-height: 25px;
   }
 
   .start__image {
-    top: 20px;
-    left: 15px;
+    top: 24px;
+    left: 42%;
     width: 301px;
     height: 220px;
+    margin-left: -110px;
     background-image: url(../../img/circuit-mobile@1x.png);
     background-size: contain;
   }

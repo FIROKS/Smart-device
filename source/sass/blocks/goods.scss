@@ -1,20 +1,19 @@
 .goods {
   padding-top: 90px;
-  padding-bottom: 125px;
+  padding-bottom: 101px;
   background-color: $bgc-color;
 }
 
 .goods__container {
   max-width: 1170px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .goods__lead {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  margin-bottom: 24px;
+  font-family: 'RobotoCondensed-Regular', 'Arial', sans-serif;
   font-size: 36px;
   line-height: 51px;
   font-style: normal;
@@ -23,10 +22,10 @@
 }
 
 .goods__item h3 {
-  max-width: 190px;
+  max-width: 170px;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: 'RobotoCondensed-Regular', 'Arial', sans-serif;
   font-size: 20px;
   line-height: 30px;
   font-style: normal;
@@ -37,11 +36,10 @@
 .goods__list {
   @include list-reset;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .goods__list li {
-  width: 31%;
+  max-width: 370px;
   padding: 27px 0;
 }
 
@@ -56,7 +54,7 @@
   display: block;
   position: relative;
   min-height: 620px;
-  padding: 53px 63px 63px 43px;
+  padding: 52px 160px 63px 43px;
   background-color: $bgc-color;
   background-position: center;
   background-repeat: no-repeat;
@@ -131,8 +129,8 @@
 
 @media (max-width: $desktop-width) {
   .goods {
-    padding-top: 53px;
-    padding-bottom: 58px;
+    padding-top: 50px;
+    padding-bottom: 56px;
   }
 
   .goods__lead {
@@ -148,16 +146,18 @@
 
   .goods__list {
     flex-direction: column;
+    align-items: center;
   }
 
   .goods__list li {
+    max-width: unset;
     width: 100%;
-    padding: 25px 0;
+    padding: 23px 0;
   }
 
   .goods__item {
     min-height: 256px;
-    padding: 43px 63px 63px 43px;
+    padding: 41px 63px 63px 43px;
   }
 
   .goods__list li:not(:last-child) {
@@ -198,7 +198,7 @@
 
 @media (max-width: $tablet-width) {
   .goods {
-    padding-bottom: 64px;
+    padding-bottom: 49px;
   }
 
   .goods__container {
@@ -207,13 +207,14 @@
   }
 
   .goods__lead {
-    margin-bottom: 12px;
+    margin-bottom: 27px;
+    padding-left: 10px;
     font-size: 28px;
     line-height: 39px;
   }
 
   .goods__item {
-    padding: 23px 63px 63px 35px;
+    padding: 22px 63px 63px 35px;
   }
 
   .goods__list li {

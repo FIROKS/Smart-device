@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     padding-top: 30px;
-    padding-right: 80px;
+    padding-right: 45px;
   }
 
   .header__contacts-container {
@@ -11,6 +11,7 @@
     align-items: center;
     max-width: 1170px;
     margin-left: auto;
+    padding-top: 5px;
   }
 
   .header__menu {
@@ -31,7 +32,7 @@
   .header__tel {
     position: relative;
     margin-left: 88px;
-    margin-right: 38px;
+    margin-right: 50px;
     padding-left: 34px;
     line-height: 18px;
     background-image: url(../../img/icon-phone.svg);
@@ -48,8 +49,8 @@
 
 @media (max-width: $desktop-width) {
   .header {
-    padding: 0 25px;
-    padding-top: 23px;
+    padding: 0 24px;
+    padding-top: 17px;
     padding-bottom: 13px;
   }
 
@@ -57,7 +58,8 @@
     align-items: top;
     justify-content: space-between;
     max-width: none;
-    min-width: 160px;
+    min-width: 155px;
+    padding-top: 0;
   }
 
   .header__menu {
@@ -80,6 +82,7 @@
     padding: 0;
     font-size: 0;
     background-position: center;
+    background-size: cover;
   }
 
   .header__tel {
@@ -89,17 +92,23 @@
     padding: 0;
     font-size: 0;
     background-position: center;
+    background-size: cover;
   }
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-width) {
   .header {
     padding-top: 17px;
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 17px;
   }
 
   .header__contacts-container {
     min-width: 137px;
+    padding-bottom: 7px;
+  }
+
+  .header__menu {
+    height: 13px;
   }
 }

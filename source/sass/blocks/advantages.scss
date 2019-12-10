@@ -13,16 +13,17 @@
 
 .advantages__list li {
   position: relative;
-  width: 48%;
+  width: 48.6%;
   min-height: 300px;
   margin-bottom: 30px;
-  padding: 40px 40px;
+  padding: 42px 44px;
+  padding-right: 40px;
   border: 1px solid #ebebeb;
   background-color: #ffffff;
 }
 
-.advantages__list li:nth-child(2n+1) {
-  margin-right: 30px;
+.advantages__list li:nth-child(2n+2) {
+  margin-left: auto;
 }
 
 .advantages__list li:hover {
@@ -46,8 +47,13 @@
   background-color: #00b2ff;
 }
 
+.advantages__icon-container {
+  min-height: 35px;
+  margin-bottom: 20px;
+}
+
 .advantages__icon {
-  margin-bottom: 23px;
+  display: block;
 }
 
 .advantages__icon use {
@@ -60,9 +66,9 @@
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   padding: 0;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: 'RobotoCondensed-Regular', 'Arial', sans-serif;
   font-size: 24px;
   line-height: 34px;
   font-style: normal;
@@ -71,14 +77,15 @@
 }
 
 .advantages__text {
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: 'PTMono-Regular', 'Arial', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 @media (max-width: $desktop-width) {
   .advantages {
-    margin-bottom: 29px;
+    margin-bottom: 25px;
+    padding-top: 55px;
   }
 
   .advantages__list {
@@ -87,20 +94,29 @@
 
   .advantages__list li {
     width: 345px;
-    min-height: 306px;
+    min-height: 232px;
     margin-right: 25px;
-    margin-bottom: 34px;
-    padding: 24px 21px 34px 27px;
+    margin-bottom: 30px;
+    padding: 24px 19px 19px 27px;
   }
 
-  .advantages__icon {
+  .advantages__list li:nth-child(2n+2) {
+    margin-right: 0;
+  }
+
+  .advantages__icon-container {
+    min-height: 35px;
+    margin-bottom: 6px;
+  }
+
+  .advantages__title {
     margin-bottom: 10px;
   }
 }
 
 @media (max-width: $tablet-width) {
   .advantages {
-    padding-top: 27px;
+    padding-top: 38px;
     padding-bottom: 60px;
   }
 
@@ -114,6 +130,11 @@
     width: 100%;
     min-height: 244px;
     margin: 0;
+    padding-bottom: 23px;
+  }
+
+  .advantages__list li:nth-child(2) {
+    padding-right: 10px;
   }
 
   .advantages__list li:not(:last-child) {
@@ -129,8 +150,12 @@
   }
 
   .advantages__title {
-    margin-bottom: 17px;
+    margin-bottom: 10px;
     font-size: 20px;
     line-height: 28px;
+  }
+
+  .advantages__icon-container {
+    margin-bottom: 12px;
   }
 }

@@ -2,10 +2,16 @@
   .center {
     max-width: 1500px;
     margin: 0 auto;
+    padding-left: 44px;
+  }
+
+  .center--footer {
+    padding-left: 21px;
   }
 
   .center--footer-bot {
     display: flex;
+    padding-right: 46px;
   }
 
   .center--form {
@@ -13,9 +19,14 @@
     align-items: center;
   }
 
+  .center--no-pad {
+    padding: 0;
+  }
+
 @media (max-width: $desktop-width) {
   .center {
     max-width: 770px;
+    padding-left: 0;
   }
 
   .center--footer {
@@ -26,6 +37,7 @@
   .center--footer-bot {
     display: flex;
     max-width: none;
+    padding-right: 24px;
   }
 }
 
@@ -37,5 +49,6 @@
   .center--footer-bot {
     flex-direction: column;
     align-items: center;
+    padding: 0;
   }
 }
