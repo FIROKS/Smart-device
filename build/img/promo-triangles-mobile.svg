@@ -1,14 +1,1 @@
-<svg width="726" height="603" viewBox="0 0 726 603" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="-721" y="-113" width="1447" height="716">
-<rect x="-721" y="-113" width="1446.5" height="715.718" fill="#C4C4C4"/>
-</mask>
-<g mask="url(#mask0)">
-<path opacity="0.2" d="M527.031 148.235L320.308 506.29L113.584 148.235L527.031 148.235Z" stroke="white"/>
-<path opacity="0.2" d="M316.312 297.531L195.496 506.791L74.6793 297.531L316.312 297.531Z" stroke="white"/>
-<circle cx="112.999" cy="147.672" r="3.76694" fill="white"/>
-<circle cx="74.5775" cy="297.596" r="3.76694" fill="white"/>
-<circle cx="195.872" cy="507.038" r="3.76694" fill="white"/>
-<circle cx="320.181" cy="506.285" r="3.76694" fill="white"/>
-<circle cx="527.363" cy="147.672" r="3.76694" fill="white"/>
-</g>
-</svg>
+<svg width="726" height="603" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="a" maskUnits="userSpaceOnUse" x="-721" y="-113" width="1447" height="716"><path fill="#C4C4C4" d="M-721-113H725.5v715.718H-721z"/></mask><g mask="url(#a)"><path opacity=".2" d="M527.031 148.235L320.308 506.29 113.584 148.235h413.447z" stroke="#fff"/><path opacity=".2" d="M316.312 297.531l-120.816 209.26-120.817-209.26h241.633z" stroke="#fff"/><circle cx="112.999" cy="147.672" r="3.767" fill="#fff"/><circle cx="74.578" cy="297.596" r="3.767" fill="#fff"/><circle cx="195.872" cy="507.038" r="3.767" fill="#fff"/><circle cx="320.181" cy="506.285" r="3.767" fill="#fff"/><circle cx="527.363" cy="147.672" r="3.767" fill="#fff"/></g></svg>
