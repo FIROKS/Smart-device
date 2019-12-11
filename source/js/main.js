@@ -1,31 +1,55 @@
 'use strict';
 
 var ESC_KEYCODE = 27;
+var TABLET_WIDTH = 767;
 
 var onCallButtonElementClick = function (evt) {
   evt.preventDefault();
 
   if (modalCallElement && overlayElement && modalCloseElement) {
+    var currentWidth = document.documentElement.clientWidth;
+
     modalCallElement.classList.add('modal--show');
     overlayElement.classList.add('modal--show');
 
-    modalNameInputElement.focus();
+    if (modalNameInputElement && modalTelInputElement && modalAreaElement) {
 
-    if (isStorageSupport) {
-      modalNameInputElement.value = storage.name;
-      modalTelInputElement.value = storage.tel;
-      modalAreaElement.value = storage.text;
+      modalNameInputElement.focus();
+
+      if (currentWidth < TABLET_WIDTH) {
+        bodyElement.style.position = 'fixed';
+      }
+
+      if (typeof (storage.name) === 'undefined') {
+        modalNameInputElement.value = '';
+      } else {
+        modalNameInputElement.value = storage.name;
+      }
+
+      if (typeof (storage.tel) === 'undefined') {
+        modalNameInputElement.value = '';
+      } else {
+        modalTelInputElement.value = storage.tel;
+      }
+
+      if (typeof (storage.name) === 'undefined') {
+        modalNameInputElement.value = '';
+      } else {
+        modalAreaElement.value = storage.text;
+      }
     }
-
-    modalCloseElement.addEventListener('click', oNmodalCloseElementClick);
-    overlayElement.addEventListener('click', onOverlayElementClick);
-    window.addEventListener('keydown', onWindowKeydown);
-    modalFormElement.addEventListener('submit', onModalFormElementSubmit);
   }
+
+  modalCloseElement.addEventListener('click', oNmodalCloseElementClick);
+  overlayElement.addEventListener('click', onOverlayElementClick);
+  window.addEventListener('keydown', onWindowKeydown);
+  modalFormElement.addEventListener('submit', onModalFormElementSubmit);
 };
 
 var oNmodalCloseElementClick = function (evt) {
   evt.preventDefault();
+
+  bodyElement.style.position = 'static';
 
   modalCallElement.classList.remove('modal--show');
   overlayElement.classList.remove('modal--show');
@@ -39,6 +63,8 @@ var oNmodalCloseElementClick = function (evt) {
 var onOverlayElementClick = function (evt) {
   evt.preventDefault();
 
+  bodyElement.style.position = 'static';
+
   modalCallElement.classList.remove('modal--show');
   overlayElement.classList.remove('modal--show');
 
@@ -51,6 +77,8 @@ var onOverlayElementClick = function (evt) {
 var onWindowKeydown = function (evt) {
   if (evt.keyCode === ESC_KEYCODE) {
     evt.preventDefault();
+
+    bodyElement.style.position = 'static';
 
     modalCallElement.classList.remove('modal--show');
     overlayElement.classList.remove('modal--show');
@@ -73,6 +101,17 @@ var onModalFormElementSubmit = function () {
   }
 };
 
+var onNavOpenElementClick = function (evt) {
+  evt.preventDefault();
+
+  if (navListElements) {
+    navListElements.forEach(function (elem) {
+      elem.classList.toggle('footer__nav-list--show');
+    });
+  }
+};
+
+var bodyElement = document.querySelector('body');
 var callButtonElement = document.querySelector('.button--header');
 var modalCloseElement = document.querySelector('.modal__close');
 var overlayElement = document.querySelector('.modal--overlay');
@@ -83,7 +122,15 @@ var modalNameInputElement = modalFormElement.querySelector('input[type="text"]')
 var modalTelInputElement = modalFormElement.querySelector('input[type="tel"]');
 var modalAreaElement = modalFormElement.querySelector('textarea');
 
-var storage;
+var navOpenElement = document.querySelector('.footer__nav');
+var navListElements = document.querySelectorAll('.footer__nav-list');
+
+var storage = {
+  name: '',
+  tel: '',
+  text: ''
+};
+
 var isStorageSupport = true;
 
 try {
@@ -92,6 +139,10 @@ try {
   isStorageSupport = false;
 }
 
-if (callButtonElement) {
+if (callButtonElement && modalFormElement) {
   callButtonElement.addEventListener('click', onCallButtonElementClick);
+}
+
+if (navOpenElement) {
+  navOpenElement.addEventListener('click', onNavOpenElementClick);
 }

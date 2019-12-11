@@ -3,8 +3,8 @@
   position: fixed;
   top: 136px;
   left: 50%;
+  width: 490px;
   margin-left: -245px;
-  max-width: 490px;
   padding: 33px 39px 36px 39px;
   background-color: $main-color;
   z-index: 6;
@@ -41,130 +41,9 @@
 .modal__text {
   width: 381px;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   padding: 0;
   color: #ffffff;
-}
-
-.modal__form input[type="text"],
-.modal__form input[type="tel"] {
-  width: 100%;
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 15px 24px;
-  font-size: 16px;
-  line-height: 22px;
-  font-family: inherit;
-  font-style: inherit;
-  font-weight: inherit;
-  color: #ffffff;
-  border: none;
-  background-color: #19baff;
-}
-
-.modal__form textarea {
-  width: 100%;
-  height: 104px;
-  margin: 0;
-  margin-bottom: 28px;
-  padding: 16px 24px;
-  font-size: 16px;
-  line-height: 22px;
-  font-family: inherit;
-  font-style: inherit;
-  font-weight: inherit;
-  color: #ffffff;
-  border: none;
-  background-color: #19baff;
-  resize: none;
-}
-
-.modal__form input:hover,
-.modal__form textarea:hover {
-  cursor: pointer;
-}
-
-.modal__form input::-webkit-input-placeholder,
-.modal__form textarea::-webkit-input-placeholder {
-  color: #ffffff;
-}
-
-.modal__form input::-moz-placeholder,
-.modal__form textarea::-moz-placeholder {
-  color: #ffffff;
-}
-
-.modal__form input:-moz-placeholder,
-.modal__form textarea:-moz-placeholder {
-  color: #ffffff;
-}
-
-.modal__form input:-ms-input-placeholder,
-.modal__form textarea:-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.modal__form button {
-  width: 100%;
-  margin-bottom: 34px;
-  padding: 14px 15px;
-  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  font-style: normal;
-  font-weight: bold;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  border: 1px solid #ffffff;
-  border-radius: 5px;
-  color: #ffffff;
-  background-color: transparent;
-}
-
-.modal__form button:hover {
-  background-color: #ffffff;
-  color: $main-color;
-  cursor: pointer;
-}
-
-.modal__form input[id="modal-agreement"] + label {
-  display: inline-block;
-  position: relative;
-  max-width: 390px;
-  padding-left: 49px;
-  font-size: 14px;
-  line-height: 16px;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: normal;
-  color: rgba(#ffffff, 0.8);
-}
-
-.modal__form input[id="modal-agreement"] + label:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
-
-.modal__form input[id="modal-agreement"] {
-  @include visually-hidden;
-}
-
-.modal__form input[id="modal-agreement"] + label::before {
-  content: "";
-  position: absolute;
-  top: 1;
-  left: 0;
-  width: 16px;
-  height: 16px;
-  border: 1px solid #ffffff;
-}
-
-.modal__form input[id="modal-agreement"]:checked + label::before {
-  background-image: url("../../img/tick.svg");
-  background-size: 10px 7px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .modal__close {

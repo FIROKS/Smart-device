@@ -1,12 +1,15 @@
 .body__wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .body__start-container {
   min-height: 878px;
-  background-image: url("../../img/waves.svg");
+  padding-bottom: 70px;
+  background-image: url("../img/waves.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,6 +20,7 @@
 @media (max-width: $desktop-width) {
   .body__start-container {
     min-height: 685px;
+    padding-bottom: 65px;
     background-position: center;
     background-size: cover;
     box-shadow: none;
@@ -26,9 +30,10 @@
 @media (max-width: $tablet-width) {
   .body__start-container {
     min-height: 646px;
+    padding-bottom: 51px;
     padding-left: 0;
-    background-image: url("../../img/waves.svg"),
-      url("../../img/promo-triangles-mobile.svg");
+    background-image: url("../img/waves.svg"),
+      url("../img/promo-triangles-mobile.svg");
     background-position: center, 88px -84px;
   }
 }

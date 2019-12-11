@@ -8,7 +8,7 @@
 .about__year {
   height: 317px;
   width: 155px;
-  background-image: url("../../img/year-desktop@1x.png");
+  background-image: url("../img/year-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -19,7 +19,7 @@
   margin-left: 25px;
 }
 
-.about__title {
+.about h2 {
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
@@ -29,7 +29,7 @@
   line-height: 44px;
 }
 
-.about__text {
+.about p {
   margin: 0;
   margin-bottom: 19px;
   padding: 0;
@@ -38,7 +38,7 @@
 @media (min-resolution: $retina-dpi),
   (min-resolution: $retina-dppx) {
   .about__year {
-    background-image: url("../../img/year-desktop@2x.png");
+    background-image: url("../img/year-desktop@2x.png");
   }
 }
 
@@ -60,13 +60,13 @@
     margin-left: 46px;
   }
 
-  .about__title {
+  .about h2 {
     margin-bottom: 26px;
     font-size: 32px;
     line-height: 45px;
   }
 
-  .about__text {
+  .about p {
     padding-left: 3px;
     padding-bottom: 1px;
   }
@@ -97,18 +97,18 @@
     margin-right: 5px;
   }
 
-  .about__title {
+  .about h2 {
     margin-bottom: 21px;
     font-size: 28px;
     line-height: 39px;
   }
 
-  .about__text {
+  .about p {
     margin-bottom: 38px;
     padding-right: 2px;
   }
 
-  .about__text:last-of-type {
+  .about p:last-of-type {
     margin-bottom: 22px;
   }
 }
