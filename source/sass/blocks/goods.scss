@@ -1,18 +1,18 @@
 .goods {
   padding-top: 90px;
-  padding-bottom: 101px;
+  padding-bottom: 77px;
   background-color: $bgc-color;
 }
 
 .goods__container {
-  max-width: 1170px;
+  max-width: 1230px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .goods p {
   margin: 0;
   padding: 0;
-  margin-bottom: 24px;
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-size: 36px;
   line-height: 51px;
@@ -41,16 +41,26 @@
 }
 
 .goods__item {
+  position: relative;
   width: 30.8%;
-  padding: 27px 0;
+  padding: 50px 0;
   margin-left: 30px;
 }
 
 .goods__item:hover {
   opacity: 0.7;
-  outline: 3px solid $main-color;
-  outline-offset: 20px;
   cursor: pointer;
+}
+
+.goods__item:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 116%;
+  height: 100%;
+  border: 3px solid $main-color;
+  z-index: 1;
 }
 
 .goods__link {
@@ -129,31 +139,40 @@
 @media (max-width: $desktop-width) {
   .goods {
     padding-top: 50px;
-    padding-bottom: 56px;
+    padding-bottom: 31px;
   }
 
   .goods p {
     max-width: 615px;
-    margin-bottom: 25px;
     font-size: 32px;
     line-height: 45px;
   }
 
   .goods__container {
     padding: 0 25px;
+    padding-right: 22px;
   }
 
   .goods__list {
     flex-direction: column;
     align-items: center;
     margin-left: 0;
+    padding-bottom: 47px;
   }
 
   .goods__item {
     max-width: unset;
     width: 100%;
-    padding: 23px 0;
+    padding: 47px 0;
+    padding-bottom: 0;
     margin-left: 0;
+  }
+
+  .goods__item:hover::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 47px);
   }
 
   .goods__link {
@@ -191,7 +210,7 @@
 
 @media (max-width: $tablet-width) {
   .goods {
-    padding-bottom: 49px;
+    padding-bottom: 35px;
   }
 
   .goods__container {
@@ -200,8 +219,8 @@
   }
 
   .goods p {
-    margin-bottom: 27px;
     padding-left: 10px;
+    margin-bottom: 10px;
     font-size: 28px;
     line-height: 39px;
   }
@@ -210,12 +229,20 @@
     padding: 22px 63px 63px 35px;
   }
 
-  .goods__item {
-    padding: 15px 0;
+  .goods__list {
+    padding-bottom: 30px;
   }
 
-  .goods__item:hover {
-    outline-offset: 10px;
+  .goods__item {
+    padding: 30px 0;
+    padding-bottom: 0;
+  }
+
+  .goods__item:hover::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 30px);
   }
 
   .goods__link--prod {
