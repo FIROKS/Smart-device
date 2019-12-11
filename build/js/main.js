@@ -14,7 +14,9 @@ var onCallButtonElementClick = function (evt) {
 
       modalNameInputElement.focus();
 
-      bodyElement.style.position = 'fixed';
+      if (bodyElement) {
+        bodyElement.style.position = 'fixed';
+      }
 
       if (typeof (storage.name) === 'undefined') {
         modalNameInputElement.value = '';
@@ -46,7 +48,9 @@ var onCallButtonElementClick = function (evt) {
 var oNmodalCloseElementClick = function (evt) {
   evt.preventDefault();
 
-  bodyElement.style.position = 'static';
+  if (bodyElement) {
+    bodyElement.style.position = 'static';
+  }
 
   modalCallElement.classList.remove('modal--show');
   overlayElement.classList.remove('modal--show');
@@ -60,7 +64,9 @@ var oNmodalCloseElementClick = function (evt) {
 var onOverlayElementClick = function (evt) {
   evt.preventDefault();
 
-  bodyElement.style.position = 'static';
+  if (bodyElement) {
+    bodyElement.style.position = 'static';
+  }
 
   modalCallElement.classList.remove('modal--show');
   overlayElement.classList.remove('modal--show');
@@ -75,7 +81,9 @@ var onWindowKeydown = function (evt) {
   if (evt.keyCode === ESC_KEYCODE) {
     evt.preventDefault();
 
-    bodyElement.style.position = 'static';
+    if (bodyElement) {
+      bodyElement.style.position = 'static';
+    }
 
     modalCallElement.classList.remove('modal--show');
     overlayElement.classList.remove('modal--show');
