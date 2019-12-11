@@ -15,7 +15,8 @@ var onCallButtonElementClick = function (evt) {
       modalNameInputElement.focus();
 
       if (bodyElement) {
-        bodyElement.style.position = 'fixed';
+        bodyElement.classList.add('body--noscroll');
+        bodyElement.style.top = bodyElement.scrollTop + 'px';
       }
 
       if (typeof (storage.name) === 'undefined') {
@@ -49,7 +50,7 @@ var oNmodalCloseElementClick = function (evt) {
   evt.preventDefault();
 
   if (bodyElement) {
-    bodyElement.style.position = 'static';
+    bodyElement.classList.remove('body--noscroll');
   }
 
   modalCallElement.classList.remove('modal--show');
@@ -65,7 +66,7 @@ var onOverlayElementClick = function (evt) {
   evt.preventDefault();
 
   if (bodyElement) {
-    bodyElement.style.position = 'static';
+    bodyElement.classList.remove('body--noscroll');
   }
 
   modalCallElement.classList.remove('modal--show');
@@ -82,7 +83,7 @@ var onWindowKeydown = function (evt) {
     evt.preventDefault();
 
     if (bodyElement) {
-      bodyElement.style.position = 'static';
+      bodyElement.classList.remove('body--noscroll');
     }
 
     modalCallElement.classList.remove('modal--show');
@@ -114,7 +115,7 @@ var onNavOpenElementClick = function (evt) {
   });
 };
 
-var bodyElement = document.querySelector('body');
+var bodyElement = document.querySelector('.body');
 var callButtonElement = document.querySelector('.button--header');
 var modalCloseElement = document.querySelector('.modal__close');
 var overlayElement = document.querySelector('.modal--overlay');
