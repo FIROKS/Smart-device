@@ -1,13 +1,11 @@
 'use strict';
 
 var ESC_KEYCODE = 27;
-var TABLET_WIDTH = 767;
 
 var onCallButtonElementClick = function (evt) {
   evt.preventDefault();
 
   if (modalCallElement && overlayElement && modalCloseElement) {
-    var currentWidth = document.documentElement.clientWidth;
 
     modalCallElement.classList.add('modal--show');
     overlayElement.classList.add('modal--show');
@@ -16,9 +14,7 @@ var onCallButtonElementClick = function (evt) {
 
       modalNameInputElement.focus();
 
-      if (currentWidth < TABLET_WIDTH) {
-        bodyElement.style.position = 'fixed';
-      }
+      bodyElement.style.position = 'fixed';
 
       if (typeof (storage.name) === 'undefined') {
         modalNameInputElement.value = '';
