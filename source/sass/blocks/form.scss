@@ -197,6 +197,11 @@
     width: 272px;
     padding-left: 35px;
   }
+
+  .form--page textarea {
+    margin-bottom: 47px;
+    padding: 12px 18px;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -219,6 +224,10 @@
     margin-bottom: 30px;
     padding-top: 10px;
     height: 103px;
+  }
+
+  .form--page textarea{
+    margin-bottom: 32px;
   }
 
   .form button {
