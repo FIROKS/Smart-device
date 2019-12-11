@@ -38,12 +38,13 @@ var onCallButtonElementClick = function (evt) {
         modalAreaElement.value = storage.text;
       }
     }
-  }
 
-  modalCloseElement.addEventListener('click', oNmodalCloseElementClick);
-  overlayElement.addEventListener('click', onOverlayElementClick);
-  window.addEventListener('keydown', onWindowKeydown);
-  modalFormElement.addEventListener('submit', onModalFormElementSubmit);
+    modalCloseElement.addEventListener('click', oNmodalCloseElementClick);
+    overlayElement.addEventListener('click', onOverlayElementClick);
+    window.addEventListener('keydown', onWindowKeydown);
+
+    modalFormElement.addEventListener('submit', onModalFormElementSubmit);
+  }
 };
 
 var oNmodalCloseElementClick = function (evt) {
@@ -104,11 +105,9 @@ var onModalFormElementSubmit = function () {
 var onNavOpenElementClick = function (evt) {
   evt.preventDefault();
 
-  if (navListElements) {
-    navListElements.forEach(function (elem) {
-      elem.classList.toggle('footer__nav-list--show');
-    });
-  }
+  navListElements.forEach(function (elem) {
+    elem.classList.toggle('footer__nav-list--show');
+  });
 };
 
 var bodyElement = document.querySelector('body');
@@ -117,10 +116,10 @@ var modalCloseElement = document.querySelector('.modal__close');
 var overlayElement = document.querySelector('.modal--overlay');
 
 var modalCallElement = document.querySelector('.modal--call');
-var modalFormElement = modalCallElement.querySelector('form');
-var modalNameInputElement = modalFormElement.querySelector('input[type="text"]');
-var modalTelInputElement = modalFormElement.querySelector('input[type="tel"]');
-var modalAreaElement = modalFormElement.querySelector('textarea');
+var modalFormElement = document.querySelector('.form--modal form');
+var modalNameInputElement = document.querySelector('.form--modal input[type="text"]');
+var modalTelInputElement = document.querySelector('input[type="tel"]');
+var modalAreaElement = document.querySelector('textarea');
 
 var navOpenElement = document.querySelector('.footer__nav');
 var navListElements = document.querySelectorAll('.footer__nav-list');
@@ -143,6 +142,6 @@ if (callButtonElement && modalFormElement) {
   callButtonElement.addEventListener('click', onCallButtonElementClick);
 }
 
-if (navOpenElement) {
+if (navOpenElement && navListElements.length) {
   navOpenElement.addEventListener('click', onNavOpenElementClick);
 }
