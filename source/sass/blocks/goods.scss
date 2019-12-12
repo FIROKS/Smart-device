@@ -139,11 +139,11 @@
 @media (min-resolution: $retina-dpi),
   (min-resolution: $retina-dppx) {
   .no-webp .goods__link--prod,
-  .no-js .goods__link--prod{
+  .no-js .goods__link--prod {
     background-image: url("../img/1-item-desktop@2x.png");
   }
 
-  .webp .goods__link--prod{
+  .webp .goods__link--prod {
     background-image: url("../img/1-item-desktop@2x.webp");
   }
 
