@@ -36,8 +36,8 @@
           <div class="start__container">
             <h1>Печатные платы</h1>
             <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-            <button class="button button--start" type="button"><span class="start__button-text">Получить бесплатную консультацию</span><span class="start__button-text-m">Бесплатная консультация</span></button>
-            <p class="start__scroll-text">Скролл вниз</p>
+            <button class="button button--start" type="button"><a class="button__link" href="#form"><span class="start__button-text">Получить бесплатную консультацию</span><span class="start__button-text-m">Бесплатная консультация</span></a></button>
+            <a href="#advantages" class="start__scroll-text">Скролл вниз</a>
           </div>
           <div class="start__image"></div>
 
@@ -46,7 +46,7 @@
       </div>
       <main class="main">
         <div class="main__container">
-          <section class="advantages">
+          <section id="advantages" class="advantages">
           <div class="center center--no-pad">
             <h2 class="visually-hidden">Наши преимущества</h2>
             <div class="advantages__list-container">
@@ -128,7 +128,7 @@
             <h2 class="visually-hidden">Задать вопрос</h2>
             <p class="form-section__text">Остались вопросы? Задайте их нам!</p>
             <p class="form-section__sub-text">Мы проконсультируем Вас бесплатно</p>
-            <div class="form form--page">
+            <div id="form" class="form form--page">
               <form action="#" method="POST" autocomplete="on">
                 <label class="visually-hidden" for="name">Ваше имя</label>
                   <input id="name" type="text" name="name" placeholder="Имя" required="">

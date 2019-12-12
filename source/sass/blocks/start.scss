@@ -61,7 +61,8 @@
   background: #ffffff;
 }
 
-p.start__scroll-text {
+.start__scroll-text {
+  display: block;
   position: absolute;
   bottom: 35px;
   left: -39px;
@@ -73,6 +74,11 @@ p.start__scroll-text {
   color: #ffffff;
   opacity: 0.5;
   transform: rotate(-90deg);
+}
+
+.start__scroll-text:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 
 .start__button-text-m {

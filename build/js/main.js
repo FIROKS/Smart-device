@@ -128,6 +128,20 @@ var onElementClick = function (evt) {
   element.classList.add('show');
 };
 
+var onAnchorElementClick = function (evt) {
+  evt.preventDefault();
+
+  var toRef = evt.currentTarget.getAttribute('href');
+  var toElement = document.querySelector(toRef);
+
+  if (toElement) {
+    toElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+};
+
 var bodyElement = document.querySelector('.body');
 var callButtonElement = document.querySelector('.button--header');
 var modalCloseElement = document.querySelector('.modal__close');
@@ -141,6 +155,8 @@ var modalTelInputElement = document.querySelector('input[type="tel"]');
 var modalAreaElement = document.querySelector('textarea');
 
 var togglerElements = document.querySelectorAll('.footer__toggler');
+
+var anchorElements = document.querySelectorAll('a[href*="#"]');
 
 var topScrollAmount;
 
@@ -156,6 +172,12 @@ try {
   storage = localStorage;
 } catch (err) {
   isStorageSupport = false;
+}
+
+if (anchorElements.length) {
+  anchorElements.forEach(function (elem) {
+    elem.addEventListener('click', onAnchorElementClick);
+  });
 }
 
 if (modalElement && callButtonElement && modalFormElement) {

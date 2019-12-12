@@ -42,6 +42,10 @@
   color: #ffffff;
 }
 
+.button__link {
+  color: inherit;
+}
+
 @media (max-width: $desktop-width) {
   .button--header {
     display: none;
