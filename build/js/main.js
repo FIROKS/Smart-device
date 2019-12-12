@@ -5,18 +5,21 @@ var ESC_KEYCODE = 27;
 var onCallButtonElementClick = function (evt) {
   evt.preventDefault();
 
+  topScrollAmount = document.documentElement.scrollTop;
+
   if (modalCallElement && overlayElement && modalCloseElement) {
 
     modalCallElement.classList.add('modal--show');
     overlayElement.classList.add('modal--show');
+    modalElement.classList.add('modal--show');
 
     if (modalNameInputElement && modalTelInputElement && modalAreaElement) {
 
       modalNameInputElement.focus();
 
       if (bodyElement) {
+        bodyElement.style.top = '-' + topScrollAmount + 'px';
         bodyElement.classList.add('body--noscroll');
-        bodyElement.style.top = bodyElement.scrollTop + 'px';
       }
 
       if (typeof (storage.name) === 'undefined') {
@@ -51,10 +54,12 @@ var oNmodalCloseElementClick = function (evt) {
 
   if (bodyElement) {
     bodyElement.classList.remove('body--noscroll');
+    scrollTo(0, topScrollAmount);
   }
 
   modalCallElement.classList.remove('modal--show');
   overlayElement.classList.remove('modal--show');
+  modalElement.classList.remove('modal--show');
 
   modalCloseElement.removeEventListener('click', oNmodalCloseElementClick);
   overlayElement.removeEventListener('click', onOverlayElementClick);
@@ -67,10 +72,12 @@ var onOverlayElementClick = function (evt) {
 
   if (bodyElement) {
     bodyElement.classList.remove('body--noscroll');
+    scrollTo(0, topScrollAmount);
   }
 
   modalCallElement.classList.remove('modal--show');
   overlayElement.classList.remove('modal--show');
+  modalElement.classList.remove('modal--show');
 
   modalCloseElement.removeEventListener('click', oNmodalCloseElementClick);
   overlayElement.removeEventListener('click', onOverlayElementClick);
@@ -84,10 +91,12 @@ var onWindowKeydown = function (evt) {
 
     if (bodyElement) {
       bodyElement.classList.remove('body--noscroll');
+      scrollTo(0, topScrollAmount);
     }
 
     modalCallElement.classList.remove('modal--show');
     overlayElement.classList.remove('modal--show');
+    modalElement.classList.remove('modal--show');
 
     modalCloseElement.removeEventListener('click', oNmodalCloseElementClick);
     overlayElement.removeEventListener('click', onOverlayElementClick);
@@ -118,9 +127,10 @@ var onNavOpenElementClick = function (evt) {
 var bodyElement = document.querySelector('.body');
 var callButtonElement = document.querySelector('.button--header');
 var modalCloseElement = document.querySelector('.modal__close');
-var overlayElement = document.querySelector('.modal--overlay');
+var overlayElement = document.querySelector('.modal__overlay');
 
-var modalCallElement = document.querySelector('.modal--call');
+var modalElement = document.querySelector('.modal');
+var modalCallElement = document.querySelector('.modal__call');
 var modalFormElement = document.querySelector('.form--modal form');
 var modalNameInputElement = document.querySelector('.form--modal input[type="text"]');
 var modalTelInputElement = document.querySelector('input[type="tel"]');
@@ -128,6 +138,8 @@ var modalAreaElement = document.querySelector('textarea');
 
 var navOpenElement = document.querySelector('.footer__nav');
 var navListElements = document.querySelectorAll('.footer__nav-list');
+
+var topScrollAmount;
 
 var storage = {
   name: '',
@@ -143,7 +155,7 @@ try {
   isStorageSupport = false;
 }
 
-if (callButtonElement && modalFormElement) {
+if (modalElement && callButtonElement && modalFormElement) {
   callButtonElement.addEventListener('click', onCallButtonElementClick);
 }
 

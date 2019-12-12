@@ -1,5 +1,5 @@
 .button {
-  min-width: 180px;
+  width: 180px;
   padding: 14px 15px;
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-size: 14px;
@@ -16,6 +16,7 @@
 }
 
 .button--start {
+  width: 408px;
   background-color: $main-color;
   margin-left: 93px;
   margin-bottom: 20px;
@@ -47,13 +48,12 @@
   }
 
   .button--start {
-    min-width: 380px;
+    width: 380px;
     margin-left: 51px;
     padding: 18px 30px;
   }
 
   .button--about {
-    min-width: 180px;
     margin-top: 16px;
     margin-left: 3px;
   }
@@ -61,7 +61,7 @@
 
 @media (max-width: $tablet-width) {
   .button--start {
-    min-width: 287px;
+    width: 287px;
     margin-left: 3px;
     font-size: 16px;
     line-height: 19px;

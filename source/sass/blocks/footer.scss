@@ -156,6 +156,15 @@
   opacity: 0.5;
 }
 
+.footer__bottom-link {
+  color: #1b2d37;
+}
+
+.footer__bottom-link:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
 .terms:hover {
   cursor: pointer;
   opacity: 1;

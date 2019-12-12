@@ -12,15 +12,17 @@
 .form-section__plane {
   width: 512px;
   height: 336px;
-  margin-right: 115px;
-  margin-left: 92px;
+  margin-left: auto;
   background-image: url("../img/airplane@1x.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .form-section__container {
   max-width: 577px;
+  margin: 0 auto;
+  margin-left: 5px;
   flex-shrink: 0;
 }
 
