@@ -120,12 +120,13 @@ var onElementClick = function (evt) {
   evt.preventDefault();
 
   var element = evt.currentTarget;
-  togglerElements.forEach(function (elem) {
-    elem.classList.remove('show');
-    elem.classList.add('hiden');
-  });
 
-  element.classList.add('show');
+  togglerElements.forEach(function (elem) {
+    if (elem !== element) {
+      elem.classList.add('hiden');
+    }
+  });
+  element.classList.toggle('hiden');
 };
 
 var onAnchorElementClick = function (evt) {
@@ -158,6 +159,11 @@ var togglerElements = document.querySelectorAll('.footer__toggler');
 
 var anchorElements = document.querySelectorAll('a[href*="#"]');
 
+var telElements = document.querySelectorAll('input[type="tel"]');
+var maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+
 var topScrollAmount;
 
 var storage = {
@@ -165,13 +171,18 @@ var storage = {
   tel: '',
   text: ''
 };
-
 var isStorageSupport = true;
 
 try {
   storage = localStorage;
 } catch (err) {
   isStorageSupport = false;
+}
+
+if (telElements.length) {
+  telElements.forEach(function (elem) {
+    var mask = IMask(elem, maskOptions);
+  });
 }
 
 if (anchorElements.length) {

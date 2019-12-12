@@ -135,7 +135,7 @@
                 <label class="visually-hidden" for="name">Ваше имя</label>
                   <input id="name" type="text" name="name" placeholder="Имя" required>
                   <label class="visually-hidden" for="tel">Ваш телефон</label>
-                  <input id="tel" type="tel" name="tel" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                  <input id="tel" type="tel" name="tel" placeholder="Телефон" required>
                   <label class="visually-hidden" for="text">Ваш вопрос</label>
                   <textarea id="text" name="question" placeholder="Ваш вопрос" required></textarea>
                   <button type="submit">Задать вопрос</button>
@@ -228,7 +228,7 @@
           <label class="visually-hidden" for="modal-name">Ваше имя</label>
             <input id="modal-name" type="text" name="name" placeholder="Имя" required>
           <label class="visually-hidden" for="modal-tel">Ваш телефон</label>
-            <input id="modal-tel" type="tel" name="tel" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <input id="modal-tel" type="tel" name="tel" placeholder="Телефон" required>
           <label class="visually-hidden" for="modal-text">Ваш вопрос</label>
           <textarea id="modal-text" name="question" placeholder="Ваш вопрос" required></textarea>
           <button type="submit">Отправить</button>
@@ -239,6 +239,7 @@
       <button type="button" class="modal__close"></button>
     </section>
     </div>
+    <script src="https://unpkg.com/imask"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
