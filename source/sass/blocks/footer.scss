@@ -86,7 +86,7 @@
   margin-right: 5px;
 }
 
-.footer__acc-cont {
+.footer__acc-cont--flex {
   display: flex;
   flex-wrap: wrap;
 }
@@ -235,6 +235,10 @@ p.footer__sd--bottom {
     margin-bottom: 0;
   }
 
+  .footer__nav-list:last-child {
+    margin-right: 18px;
+  }
+
   .footer__adress-row {
     width: 342px;
   }
@@ -315,7 +319,6 @@ p.footer__sd--bottom {
     width: 100%;
     margin-left: 0;
     padding-top: 6px;
-    padding-bottom: 21px;
   }
 
   .footer__adress-row h3 {

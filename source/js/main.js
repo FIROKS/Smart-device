@@ -133,22 +133,6 @@ var onElementClick = function (evt) {
   element.classList.toggle('hiden');
 };
 
-var onAnchorElementClick = function (evt) {
-  evt.preventDefault();
-
-  var toRef = evt.currentTarget.getAttribute('href');
-  var toElement = document.querySelector(toRef);
-
-  if (toElement) {
-    toElement.scrollIntoView({
-      behavior: 'smooth',
-      // block: 'start'
-      block: 'nearest',
-      inline: 'start'
-    });
-  }
-};
-
 var htmlElement = document.querySelector('html');
 
 var bodyElement = document.querySelector('.body');
@@ -165,7 +149,6 @@ var modalAreaElement = document.querySelector('textarea');
 
 var togglerElements = document.querySelectorAll('.footer__toggler');
 
-var anchorElements = document.querySelectorAll('a[href*="#"]');
 
 var telElements = document.querySelectorAll('input[type="tel"]');
 var maskOptions = {
@@ -191,15 +174,9 @@ if (htmlElement) {
   htmlElement.classList.remove('no-js');
 }
 
-// if (telElements.length) {
-//   telElements.forEach(function (elem) {
-//     var mask = IMask(elem, maskOptions);
-//   });
-// }
-
-if (anchorElements.length) {
-  anchorElements.forEach(function (elem) {
-    elem.addEventListener('click', onAnchorElementClick);
+if (telElements.length) {
+  telElements.forEach(function (elem) {
+    var mask = IMask(elem, maskOptions);
   });
 }
 
