@@ -116,12 +116,16 @@ var onModalFormElementSubmit = function () {
   }
 };
 
-var onNavOpenElementClick = function (evt) {
+var onElementClick = function (evt) {
   evt.preventDefault();
 
-  navListElements.forEach(function (elem) {
-    elem.classList.toggle('footer__nav-list--show');
+  var element = evt.currentTarget;
+  togglerElements.forEach(function (elem) {
+    elem.classList.remove('show');
+    elem.classList.add('hiden');
   });
+
+  element.classList.add('show');
 };
 
 var bodyElement = document.querySelector('.body');
@@ -136,8 +140,7 @@ var modalNameInputElement = document.querySelector('.form--modal input[type="tex
 var modalTelInputElement = document.querySelector('input[type="tel"]');
 var modalAreaElement = document.querySelector('textarea');
 
-var navOpenElement = document.querySelector('.footer__nav');
-var navListElements = document.querySelectorAll('.footer__nav-list');
+var togglerElements = document.querySelectorAll('.footer__toggler');
 
 var topScrollAmount;
 
@@ -159,6 +162,9 @@ if (modalElement && callButtonElement && modalFormElement) {
   callButtonElement.addEventListener('click', onCallButtonElementClick);
 }
 
-if (navOpenElement && navListElements.length) {
-  navOpenElement.addEventListener('click', onNavOpenElementClick);
+if (togglerElements.length) {
+  togglerElements.forEach(function (elem) {
+    elem.classList.add('hiden');
+    elem.addEventListener('click', onElementClick);
+  });
 }

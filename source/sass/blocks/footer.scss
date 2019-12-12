@@ -304,12 +304,7 @@ p.footer__sd--bottom {
   }
 
   .footer__nav-list {
-    display: none;
     padding-left: 25px;
-  }
-
-  .footer__nav-list--show {
-    display: block;
   }
 
   .footer__adress-row {
@@ -359,5 +354,13 @@ p.footer__sd--bottom {
     top: 125px;
     left: 48%;
     margin-left: -110px;
+  }
+
+  .hiden + .footer__acc-cont {
+    display: none;
+  }
+
+  .show + .footer__acc-cont {
+    display: block;
   }
 }
