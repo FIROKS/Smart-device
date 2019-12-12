@@ -14,10 +14,18 @@
   height: 336px;
   margin-left: auto;
   margin-right: 5px;
-  background-image: url("../img/airplane@1x.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.no-webp .form-section__plane,
+.no-js .form-section__plane {
+  background-image: url("../img/airplane@1x.png");
+}
+
+.webp .form-section__plane {
+  background-image: url("../img/airplane@1x.webp");
 }
 
 .form-section__container {

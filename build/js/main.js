@@ -1,5 +1,9 @@
 'use strict';
 
+if (window.NodeList && !NodeList.prototype.forEach) {
+  NodeList.prototype.forEach = Array.prototype.forEach;
+}
+
 var ESC_KEYCODE = 27;
 
 var onCallButtonElementClick = function (evt) {
@@ -138,10 +142,14 @@ var onAnchorElementClick = function (evt) {
   if (toElement) {
     toElement.scrollIntoView({
       behavior: 'smooth',
-      block: 'start'
+      // block: 'start'
+      block: 'nearest',
+      inline: 'start'
     });
   }
 };
+
+var htmlElement = document.querySelector('html');
 
 var bodyElement = document.querySelector('.body');
 var callButtonElement = document.querySelector('.button--header');
@@ -179,11 +187,15 @@ try {
   isStorageSupport = false;
 }
 
-if (telElements.length) {
-  telElements.forEach(function (elem) {
-    var mask = IMask(elem, maskOptions);
-  });
+if (htmlElement) {
+  htmlElement.classList.remove('no-js');
 }
+
+// if (telElements.length) {
+//   telElements.forEach(function (elem) {
+//     var mask = IMask(elem, maskOptions);
+//   });
+// }
 
 if (anchorElements.length) {
   anchorElements.forEach(function (elem) {

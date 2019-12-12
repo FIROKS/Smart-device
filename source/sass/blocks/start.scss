@@ -19,13 +19,22 @@
   right: -26px;
   width: 705px;
   height: 515px;
-  background-image: url("../img/bg-promo-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
 
+.no-webp .start__image,
+.no-js .start__image {
+  background-image: url("../img/bg-promo-desktop@1x.png");
+}
+
+.webp .start__image {
+  background-image: url("../img/bg-promo-desktop@1x.webp");
+}
+
 .start h1 {
+  width: 100%;
   margin: 0;
   margin-top: 58px;
   margin-bottom: 30px;
@@ -41,6 +50,7 @@
 }
 
 .start p {
+  width: 100%;
   position: relative;
   margin: 0;
   margin-bottom: 43px;
@@ -87,9 +97,15 @@
 
 @media (min-resolution: $retina-dpi),
   (min-resolution: $retina-dppx) {
-  .start__image {
+  .no-webp .start__image,
+  .no-js .start__image {
     background-image: url("../img/bg-promo-desktop@2x.png");
   }
+
+  .webp .start__image {
+    background-image: url("../img/bg-promo-desktop@2x.webp");
+  }
+
 }
 
 @media (max-width: $desktop-width) {
@@ -166,8 +182,16 @@
     width: 301px;
     height: 220px;
     margin-left: -110px;
-    background-image: url("../img/circuit-mobile@1x.png");
     background-size: contain;
+  }
+
+  .no-webp .start__image,
+  .no-js .start__image {
+    background-image: url("../img/circuit-mobile@1x.png");
+  }
+
+  .webp .start__image {
+    background-image: url("../img/circuit-mobile@1x.webp");
   }
 
   .start__button-text {

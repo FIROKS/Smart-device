@@ -20,7 +20,7 @@
   background-color: $main-color;
   margin-left: 93px;
   margin-bottom: 20px;
-  padding: 18px 45px;
+  padding: 18px 35px;
   font-size: 16px;
   line-height: 19px;
   border: none;
@@ -43,6 +43,7 @@
 }
 
 .button__link {
+  display: block;
   color: inherit;
 }
 
