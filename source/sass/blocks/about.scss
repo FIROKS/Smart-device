@@ -8,18 +8,14 @@
 .about__year {
   height: 317px;
   width: 155px;
+  background-image: url("../img/year-desktop@1x.webp");
   background-repeat: no-repeat;
   background-position: 30% center;
   background-size: cover;
 }
 
-.no-webp .about__year,
-.no-js .about__year {
+.no-webp .about__year {
   background-image: url("../img/year-desktop@1x.png");
-}
-
-.webp .about__year {
-  background-image: url("../img/year-desktop@1x.webp");
 }
 
 .about__container {
@@ -45,13 +41,12 @@
 
 @media (min-resolution: $retina-dpi),
   (min-resolution: $retina-dppx) {
-  .no-webp .about__year,
-  .no-js .about__year {
-    background-image: url("../img/year-desktop@2x.png");
-  }
-
   .webp .about__year {
     background-image: url("../img/year-desktop@2x.webp");
+  }
+
+  .no-webp .about__year {
+    background-image: url("../img/year-desktop@2x.png");
   }
 }
 

@@ -74,30 +74,27 @@
   background-size: cover;
 }
 
-.no-webp .goods__link--prod,
-.no-js .goods__link--prod {
+.no-webp .goods__link--prod {
   background-image: url("../img/1-item-desktop@1x.png");
 }
 
-.webp .goods__link--prod {
+.goods__link--prod {
   background-image: url("../img/1-item-desktop@1x.webp");
 }
 
-.no-webp .goods__link--install,
-.no-js .goods__link--install {
+.no-webp .goods__link--install {
   background-image: url("../img/2-item-desktop@1x.png");
 }
 
-.webp .goods__link--install {
+.goods__link--install {
   background-image: url("../img/2-item-desktop@1x.webp");
 }
 
-.no-webp .goods__link--parts,
-.no-js .goods__link--parts {
+.no-webp .goods__link--parts {
   background-image: url("../img/3-item-desktop@1x.png");
 }
 
-.webp .goods__link--parts {
+.goods__link--parts {
   background-image: url("../img/3-item-desktop@1x.webp");
 }
 
@@ -138,30 +135,27 @@
 
 @media (min-resolution: $retina-dpi),
   (min-resolution: $retina-dppx) {
-  .no-webp .goods__link--prod,
-  .no-js .goods__link--prod {
+  .no-webp .goods__link--prod {
     background-image: url("../img/1-item-desktop@2x.png");
   }
 
-  .webp .goods__link--prod {
+  .goods__link--prod {
     background-image: url("../img/1-item-desktop@2x.webp");
   }
 
-  .no-webp .goods__link--install,
-  .no-js .goods__link--install {
+  .no-webp .goods__link--install {
     background-image: url("../img/2-item-desktop@2x.png");
   }
 
-  .webp .goods__link--install {
+  .goods__link--install {
     background-image: url("../img/2-item-desktop@2x.webp");
   }
 
-  .no-webp .goods__link--parts,
-  .no-js .goods__link--parts {
+  .no-webp .goods__link--parts {
     background-image: url("../img/3-item-desktop@2x.png");
   }
 
-  .webp .goods__link--parts {
+  .goods__link--parts {
     background-image: url("../img/3-item-desktop@2x.webp");
   }
 }
@@ -210,59 +204,53 @@
     padding: 41px 63px 63px 43px;
   }
 
-  .no-webp .goods__link--prod,
-  .no-js .goods__link--prod {
+  .no-webp .goods__link--prod {
     background-image: url("../img/1-item-tablet@1x.png");
   }
 
-  .webp .goods__link--prod {
+  .goods__link--prod {
     background-image: url("../img/1-item-tablet@1x.webp");
   }
 
-  .no-webp .goods__link--install,
-  .no-js .goods__link--install {
+  .no-webp .goods__link--install {
     background-image: url("../img/2-item-tablet@1x.png");
   }
 
-  .webp .goods__link--install {
+  .goods__link--install {
     background-image: url("../img/2-item-tablet@1x.webp");
   }
 
-  .no-webp .goods__link--parts,
-  .no-js .goods__link--parts {
+  .no-webp .goods__link--parts {
     background-image: url("../img/3-item-tablet@1x.png");
   }
 
-  .webp .goods__link--parts {
+  .goods__link--parts {
     background-image: url("../img/3-item-tablet@1x.webp");
   }
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
-    .no-webp .goods__link--prod,
-    .no-js .goods__link--prod {
+    .no-webp .goods__link--prod {
       background-image: url("../img/1-item-tablet@2x.png");
     }
 
-    .webp .goods__link--prod {
+    .goods__link--prod {
       background-image: url("../img/1-item-tablet@2x.webp");
     }
 
-    .no-webp .goods__link--install,
-    .no-js .goods__link--install {
+    .no-webp .goods__link--install {
       background-image: url("../img/2-item-tablet@2x.png");
     }
 
-    .webp .goods__link--install {
+    .goods__link--install {
       background-image: url("../img/2-item-tablet@2x.webp");
     }
 
-    .no-webp .goods__link--parts,
-    .no-js .goods__link--parts {
+    .no-webp .goods__link--parts {
       background-image: url("../img/3-item-tablet@2x.png");
     }
 
-    .webp .goods__link--parts {
+    .goods__link--parts {
       background-image: url("../img/3-item-tablet@2x.webp");
     }
   }
@@ -305,59 +293,53 @@
     height: calc(100% + 30px);
   }
 
-  .no-webp .goods__link--prod,
-  .no-js .goods__link--prod {
+  .no-webp .goods__link--prod {
     background-image: url("../img/1-item-mobile@1x.png");
   }
 
-  .webp .goods__link--prod {
+  .goods__link--prod {
     background-image: url("../img/1-item-mobile@1x.webp");
   }
 
-  .no-webp .goods__link--install,
-  .no-js .goods__link--install {
+  .no-webp .goods__link--install {
     background-image: url("../img/2-item-mobile@1x.png");
   }
 
-  .webp .goods__link--install {
+  .goods__link--install {
     background-image: url("../img/2-item-mobile@1x.webp");
   }
 
-  .no-webp .goods__link--parts,
-  .no-js .goods__link--parts {
+  .no-webp .goods__link--parts {
     background-image: url("../img/3-item-mobile@1x.png");
   }
 
-  .webp .goods__link--parts {
+  .goods__link--parts {
     background-image: url("../img/3-item-mobile@1x.webp");
   }
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
-    .no-webp .goods__link--prod,
-    .no-js .goods__link--prod {
+    .no-webp .goods__link--prod {
       background-image: url("../img/1-item-mobile@2x.png");
     }
 
-    .webp .goods__link--prod {
+    .goods__link--prod {
       background-image: url("../img/1-item-mobile@2x.webp");
     }
 
-    .no-webp .goods__link--install,
-    .no-js .goods__link--install {
+    .no-webp .goods__link--install {
       background-image: url("../img/2-item-mobile@2x.png");
     }
 
-    .webp .goods__link--install {
+    .goods__link--install {
       background-image: url("../img/2-item-mobile@2x.webp");
     }
 
-    .no-webp .goods__link--parts,
-    .no-js .goods__link--parts {
+    .no-webp .goods__link--parts {
       background-image: url("../img/3-item-mobile@2x.png");
     }
 
-    .webp .goods__link--parts {
+    .goods__link--parts {
       background-image: url("../img/3-item-mobile@2x.webp");
     }
   }

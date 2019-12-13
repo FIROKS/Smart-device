@@ -133,8 +133,6 @@ var onElementClick = function (evt) {
   element.classList.toggle('hiden');
 };
 
-var htmlElement = document.querySelector('html');
-
 var bodyElement = document.querySelector('.body');
 var callButtonElement = document.querySelector('.button--header');
 var modalCloseElement = document.querySelector('.modal__close');
@@ -168,10 +166,6 @@ try {
   storage = localStorage;
 } catch (err) {
   isStorageSupport = false;
-}
-
-if (htmlElement) {
-  htmlElement.classList.remove('no-js');
 }
 
 if (telElements.length) {
